@@ -7,6 +7,7 @@ To run the program, you need to obtain an API key and password from [NS](https:/
 
 ## Environment variables
 The following environment variables should be set:
+
 |Variable|Description|Example|
 |--------|-----------|-------|
 |DB_CONNECTION|MongoDB connection for the target database|mongodb://localhost/ns-test|
@@ -16,7 +17,7 @@ The following environment variables should be set:
 Configuration is done via `config.js`.
 Primarily you would like to configure *departureDate*, date and time for which the routes will be requested.
 
-Note that NS limits a number of daily API (currently it's 50000). To prevent API abuse, the program will stop once it reaches that request amount.
+Note that NS limits a number of daily API calls (currently it's 50000). To prevent API abuse, the program will stop once it reaches that request amount.
 
 ## Geting stations
 ```
